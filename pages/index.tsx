@@ -18,12 +18,12 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>{Global.product}</title>
+        <title>FridayWallet</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Notice id="subscribed">Thank you for joining us</Notice>
-      <Header id="top" title={Global.product}/>
+      <Header id="top" title="FridayWallet"/>
 
       <main>
         <Hero
@@ -31,7 +31,7 @@ export default function Home() {
           subtitle="Play with unlimited games, music with CryptoCurrency wallet"
           illustration=""
           subscribePlaceholder="you@email.com"
-          subscribeAction="When is it ready?"
+          subscribeAction="Subscribe Now!"
         />
 
         <Benefits
@@ -69,22 +69,21 @@ export default function Home() {
           features={[
             {illustration:'', title:'Basic', text:'Start shopping now, no hidden change with basic plan'},
             {illustration:'', title:'Advanced', text:'Get discount on access to selected widget, games'},
-            {illustration:'', title:'Pro', text:'Get discount and free offer with selected widget and games'},
             
           ]}
         />
 
         <Epilogue
-          title="Ask if your visitor wants to solve problem X today"
-          subtitle="Explain how your solution will solve this problem and ask them to start a free trial, or any other low-key CTA they could take"
+          title="Schedule a conference with us?"
+          subtitle="Are you interested to sit with us to discuss your idea for business solutions?"
           illustration=""
           subscribePlaceholder="you@email.com"
-          subscribeAction="When is it ready?"
+          subscribeAction="Schedule a conference"
         />
       </main>
 
       <Footer
-        title={Global.product}
+        title="Friday Wallet"
       />
     </div>
   )
