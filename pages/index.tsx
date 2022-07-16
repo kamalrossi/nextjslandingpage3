@@ -11,10 +11,7 @@ import Notice from '../components/Notice';
 import * as Global from '../global/global.json';
 
 const LOREM = `
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it to make a type
-  specimen book.
+  Are you looking to make a mark in entertainment industry? Lets start shopping with us
 `;
 
 export default function Home() {
@@ -25,13 +22,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Notice id="subscribed">Thank you for subscribing</Notice>
+      <Notice id="subscribed">Thank you for joining us</Notice>
       <Header id="top" title={Global.product}/>
 
       <main>
         <Hero
-          title="Clear headline that explains your product’s benefit"
-          subtitle="Explain your unique solution, how it solves your customer's problem."
+          title="Friday Wallet- Your Entertainment Partner"
+          subtitle="Play with unlimited games, music with CryptoCurrency wallet"
           illustration=""
           subscribePlaceholder="you@email.com"
           subscribeAction="When is it ready?"
@@ -39,44 +36,41 @@ export default function Home() {
 
         <Benefits
           background="alternate"
-          title="Headline that describes how your product solves the problem"
-          subtitle="Start by defining the pain your customer has right now, for example: clients not paying their invoices. Then write how your solution solves this problem for your customers."
+          title="Our Features"
+          subtitle="Lets try new way of entertainment in crypto world"
           benefits={[
-            {illustration:'', title:'Main benefit of your product', text:'Brief explanation of why and how this benefit will help your customers'},
-            {illustration:'', title:'Main benefit of your product', text:'Brief explanation of why and how this benefit will help your customers'},
-            {illustration:'', title:'Main benefit of your product', text:'Brief explanation of why and how this benefit will help your customers'},
+            {illustration:'', title:'Unlimited Access to games, widget', text:'You get instant accecss to premium contents'},
+            {illustration:'', title:'Currency Exchange', text:'Exchange money with your already payment options'},
+            {illustration:'', title:'Discount on shopping', text:'Buy or sell things from marketplace'},
           ]}
         />
 
         <Break
-          title="Risk Reduction: Try Product free for 14 days"
-          subtitle="This is an in-betwen CTA for visitors that already got convinced."
+          title="Our Deals"
+          subtitle="Start using wallet, get 5 per cent discount on shopping now"
           illustration=""
-          action="When is it ready?"
+          action="Are you ready to get started?"
           onActionClick={() => window.scrollTo({top:99999, behavior:'smooth'})}
         />
 
         <Highlights
-          title="Highlights of your product"
-          subtitle="Explain why your solution deserves attention"
+          title="Our Products"
+          subtitle="We bring you different wallets for your needs"
           highlights={[
-            {illustration:'', title:'Now go deeper into what your product offers. Word it as benefits, not as features', text:'“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.'},
-            {illustration:'', title:'Now go deeper into what your product offers. Word it as benefits, not as features', text:'“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.'},
-            {illustration:'', title:'Now go deeper into what your product offers. Word it as benefits, not as features', text:'“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.'},
+            {illustration:'Pro Version', title:'Bitcon Wallet', text:'“Forget any hidden charge,enjoy our offer'},
+            {illustration:'Advanced Version', title:'Ethereum Wallet', text:'“Forget any hidden charge,enjoy our offer'},
           ]}
         />
 
         <Features
           background="alternate"
-          title="But wait, there is more"
-          subtitle="Describe the full extent of your product"
+          title="Our Pricing "
+          subtitle="We bring you the cheaper pricing options"
           features={[
-            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
-            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
-            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
-            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
-            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
-            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
+            {illustration:'', title:'Basic', text:'Start shopping now, no hidden change with basic plan'},
+            {illustration:'', title:'Advanced', text:'Get discount on access to selected widget, games'},
+            {illustration:'', title:'Pro', text:'Get discount and free offer with selected widget and games'},
+            
           ]}
         />
 
